@@ -1,7 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Welcome to GADIAN</h1>
-    <p>My GitHub Pages site is live.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GADIAN AI Studio</title>
+    <style>
+        /* Remove default margins and padding to ensure a full-screen layout */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d1117; /* Matches GitHub's dark theme */
+        }
+
+        /* Container that forces the iframe to occupy all available space */
+        .iframe-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the iframe to eliminate borders and take full size */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="iframe-container">
+        <!-- Embedding the requested GADIAN AI Studio link -->
+        <iframe 
+            src="https://gadian.ai.studio" 
+            title="GADIAN AI Studio"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
 </html>
